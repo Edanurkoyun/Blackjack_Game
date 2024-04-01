@@ -447,6 +447,14 @@ namespace blackjack_oyun
                 pcpuan = pcpuan + 10;
                 lblpcpuan.Text = pcpuan.ToString();
             }
+            if (oyuncupuan == 50)
+            {
+                MessageBox.Show("1.Oyuncu Galip Geldi!");
+            }
+            if (pcpuan == 50)
+            {
+                MessageBox.Show("Bilgisayar Galip Geldi!");
+            }
             lbloyuncu1.Text = "0";
             lbloyuncu2.Text = "0";
             lbloyuncu3.Text = "0";
