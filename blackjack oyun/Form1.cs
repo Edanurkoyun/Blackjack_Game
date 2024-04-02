@@ -455,6 +455,18 @@ namespace blackjack_oyun
             {
                 MessageBox.Show("Bilgisayar Galip Geldi!");
             }
+            if(lbloyuncupuan.Text=="50" || lblpcpuan.Text == "50")
+            {
+                MessageBox.Show("Oyun Bitmiştir!");
+                lbloyuncupuan.Text = "0";
+                lblpcpuan.Text = "0";
+                Application.Exit();
+               
+
+            }
+           
+            
+            
             lbloyuncu1.Text = "0";
             lbloyuncu2.Text = "0";
             lbloyuncu3.Text = "0";
